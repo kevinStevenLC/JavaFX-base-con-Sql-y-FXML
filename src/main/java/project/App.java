@@ -29,7 +29,7 @@ public class App extends Application {
     }
 
     @SuppressWarnings("exports")
-    public Stage GenerateFxmlTable(String file, String title) throws IOException {
+    public Stage GenerateFxml(String file, String title) throws IOException {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("view/fxml/" + file + ".fxml"));
         Parent root = loader.load();
